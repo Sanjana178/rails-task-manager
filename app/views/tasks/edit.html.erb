@@ -1,0 +1,11 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :Title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :Details %>
+  <%= f.text_field :details %>
+
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to "Back to the list", tasks_path %></p>
